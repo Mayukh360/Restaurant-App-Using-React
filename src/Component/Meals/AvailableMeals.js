@@ -31,7 +31,7 @@ const DUMMY_MEALS = [
 
 export default function AvailableMeals() {
   const mealsList = DUMMY_MEALS.map((item) => (
-    <MealItem key={item.id} title={item.name} description={item.description} price={item.price} />
+    <MealItem key={item.id} title={item.name} description={item.description} price={item.price}></MealItem> 
   ));
   return (
     <section className={classes.meals}>
