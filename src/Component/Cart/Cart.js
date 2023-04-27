@@ -11,8 +11,10 @@ export default function Cart(props) {
 
   const cartItemAddHandler = (item) => {};
 
-  const cartItemRemoveHandler = (id) => {};
-
+  const cartItemRemoveHandler = (id) => {
+    cartCtx.removeItem(id);
+  };
+  
   const cartItems = (
     <ul className={classes["cart-items"]}>
       {cartCtx.items.map((item) => (
@@ -21,7 +23,7 @@ export default function Cart(props) {
           amount={item.amount}
           name={item.name}
           key={item.id}
-          onRemove={cartItemRemoveHandler.bind(null,item.id)}
+          onRemove={() => cartItemRemoveHandler(item.id)}
           onAdd={cartItemAddHandler.bind(null,item)}
         ></CartItem>
       ))}

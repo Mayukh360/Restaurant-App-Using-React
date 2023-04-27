@@ -54,7 +54,7 @@ export default function CartProvider(props) {
     const item = cartContext.items[itemIndex];
 
     // Calculate the new total amount
-    const newTotalAmount = cartContext.totalAmount - item.price * item.amount;
+    const newTotalAmount = cartContext.totalAmount - item.price * 1;
 
     let newItems;
 

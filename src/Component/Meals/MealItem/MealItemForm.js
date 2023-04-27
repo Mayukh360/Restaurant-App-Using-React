@@ -8,6 +8,10 @@ export default function MealItemForm(props) {
   const cartCtx=useContext(CartContext);
   const amountInputRef = useRef();
 
+  const minusItemHandler=()=>{
+    cartCtx.removeItem(props.id);
+  }
+
   const addItemHandler = () => {
     const enteredAmount = amountInputRef.current.value;
     cartCtx.addItem({
@@ -43,6 +47,7 @@ export default function MealItemForm(props) {
         ref={amountInputRef}
       />
       <button onClick={addItemHandler}>+ Add</button>
+      <button onClick={minusItemHandler}>- Minus</button>
     </form>
   );
 }
