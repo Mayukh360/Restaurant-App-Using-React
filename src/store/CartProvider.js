@@ -24,7 +24,7 @@ export default function CartProvider(props) {
     if (existingCartItem) {
       const updatedItem = {
         ...existingCartItem,
-        amount: Number(existingCartItem.amount) + 1,
+        amount: existingCartItem.amount + 1,
       };
       updatedItems = [...cartContext.items];
       //Putting new Item in the updated item
@@ -42,7 +42,7 @@ export default function CartProvider(props) {
       totalAmount: updatedTotalAmount,
     };
 
-    //Updatingthe State with state updating function
+    //Updating the State with state updating function
     setCartContext(updatedCartContext);
   };
 

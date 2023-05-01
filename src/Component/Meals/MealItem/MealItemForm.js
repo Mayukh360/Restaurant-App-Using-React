@@ -47,7 +47,7 @@ export default function MealItemForm(props) {
         ref={amountInputRef}
       />
       <button onClick={addItemHandler}>+ Add</button>
-      <button onClick={minusItemHandler}>- Minus</button>
+      <button onClick={minusItemHandler}>- Remove</button>
     </form>
   );
 }

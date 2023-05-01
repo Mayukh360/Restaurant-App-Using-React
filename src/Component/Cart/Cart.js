@@ -7,6 +7,7 @@ import CartItem from "./CartItem";
 export default function Cart(props) {
   const cartCtx = useContext(CartContext);
   const totalAmount = cartCtx.totalAmount;
+ 
   const hasItem = cartCtx.items.length > 0;
 
   const cartItemAddHandler = (item) => {
@@ -35,6 +36,7 @@ export default function Cart(props) {
       ))}
     </ul>
   );
+
   return (
     <Modal onHide={props.onHide}>
       {cartItems}
