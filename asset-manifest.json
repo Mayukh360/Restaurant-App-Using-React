@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Restaurant-App-Using-React/static/css/main.ade698e1.css",
+    "main.js": "/Restaurant-App-Using-React/static/js/main.5faecba1.js",
+    "static/media/delicious-pizza-food.jpg": "/Restaurant-App-Using-React/static/media/delicious-pizza-food.fdfe19591b9bd665b952.jpg",
+    "index.html": "/Restaurant-App-Using-React/index.html",
+    "main.ade698e1.css.map": "/Restaurant-App-Using-React/static/css/main.ade698e1.css.map",
+    "main.5faecba1.js.map": "/Restaurant-App-Using-React/static/js/main.5faecba1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ade698e1.css",
+    "static/js/main.5faecba1.js"
+  ]
+}
